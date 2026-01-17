@@ -1,0 +1,47 @@
+# Binaries
+/bin
+/build
+/dist
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go build cache & modules
+*.log
+*.out
+*.test
+/go.sum
+/vendor/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# Environment / Secrets
+.env
+.env.local
+.env.*.local
+
+# OS / Misc
+Thumbs.db
+
+# Temporary files
+tmp/
+*.tmp
+*.cache
+
+# S3 or uploaded files (if saved locally before upload)
+uploads/
+tmp/
+
+# Coverage files
+coverage.out
+
+# Go workspace files (Go 1.18+)
+go.work
+go.work.sum
