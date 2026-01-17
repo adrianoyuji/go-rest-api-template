@@ -43,14 +43,6 @@ Copy `.env.example` to `.env` and set the following:
 - `DB_URL`
 - `JWT_SECRET`
 
-## Example Usage
-
-```bash
-curl -X POST http://localhost:8080/api/v1/auth/register \
-    -H "Content-Type: application/json" \
-    -d '{"username":"testuser","password":"password"}'
-```
-
 ## License
 
 MIT
