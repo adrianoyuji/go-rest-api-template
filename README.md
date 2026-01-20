@@ -1,48 +1,53 @@
-# GO REST API Template
-Golang API template with Gin, GORM (PostgresSQL), and JWT authentication.
+# Project github.com/adrianoyuji/go-rest-api-template
 
-## Quickstart
-1. Copy `.env.example` to `.env` and fill values.
-2. `go mod tidy`
-3. `go run ./cmd/server`
+One Paragraph of project description goes here
 
-This template includes example controllers, services, repositories, and middleware to jumpstart development.
+## Getting Started
 
-## Features
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-- RESTful API structure using [Gin](https://github.com/gin-gonic/gin)
-- Database integration with [GORM](https://gorm.io/) (PostgreSQL)
-- JWT-based authentication and authorization
-- Modular architecture: controllers, services, repositories, middleware
-- Environment-based configuration
-- Example CRUD endpoints
+## MakeFile
 
-## Project Structure
-
-```
-.
-├── cmd/
-│   └── server/         # Entry point
-├── config/             # Configuration loading
-├── controllers/        # HTTP handlers
-├── middleware/         # Custom middleware (e.g., JWT)
-├── models/             # GORM models
-├── repositories/       # Data access logic
-├── routes/             # Route definitions
-├── services/           # Business logic
-├── utils/              # Utility functions
-├── .env.example        # Example environment variables
-└── README.md
+Run build make command with tests
+```bash
+make all
 ```
 
-## Environment Variables
+Build the application
+```bash
+make build
+```
 
-Copy `.env.example` to `.env` and set the following:
+Run the application
+```bash
+make run
+```
+Create DB container
+```bash
+make docker-run
+```
 
-- `PORT`
-- `DB_URL`
-- `JWT_SECRET`
+Shutdown DB Container
+```bash
+make docker-down
+```
 
-## License
+DB Integrations Test:
+```bash
+make itest
+```
 
-MIT
+Live reload the application:
+```bash
+make watch
+```
+
+Run the test suite:
+```bash
+make test
+```
+
+Clean up binary from the last build:
+```bash
+make clean
+```
